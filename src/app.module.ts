@@ -10,6 +10,7 @@ import { PlayerModule } from './player/player.module';
 
 @Module({
   imports: [ConfigModule.forRoot({
+    envFilePath: ['.env.development','.env.production'],
     isGlobal: true
   }),
 TypeOrmModule.forRoot({
