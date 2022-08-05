@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "name": "CHALLENGER"
+    },
+    {
+        "id": 1,
+        "name": "GRANDMASTER"
+    },
+    {
+        "id": 2,
+        "name": "MASTER"
+    },
+    {
+        "id": 3,
+        "name": "DIAMOND"
+    },
+    {
+        "id": 4,
+        "name": "PLATINUM"
+    },
+    {
+        "id": 5,
+        "name": "GOLD"
+    },
+    {
+        "id": 6,
+        "name": "SILVER"
+    },
+    {
+        "id": 7,
+        "name": "BRONZE"
+    },
+    {
+        "id": 8,
+        "name": "IRON"
+    }
+]

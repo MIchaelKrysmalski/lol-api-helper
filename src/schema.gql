@@ -1,0 +1,75 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""ChampionData"""
+type ChampionData {
+  name: String!
+  title: String!
+  description: String!
+  tags: String!
+  winCount: Float!
+  looseCount: Float!
+  championId: ID!
+  damageDealtToBuildings: Float!
+  damageDealtToObjectives: Float!
+  damageSelfMitigated: Float!
+  topCount: Float!
+  midCount: Float!
+  jungleCount: Float!
+  adcCount: Float!
+  supportCount: Float!
+  visionScore: Float!
+  wardsPlaced: Float!
+  totalMinionsKilled: Float!
+  totalHeal: Float!
+  totalDamageTaken: Float!
+  totalDamageDealtToChampions: Float!
+  goldEarned: Float!
+  kills: Float!
+  deaths: Float!
+  assists: Float!
+  summonerLevel: Float!
+  totalTimeSpendDead: Float!
+  count: Float!
+}
+
+"""Champion-Mastery"""
+type ChampionMastery {
+  id: ID!
+  name: String!
+  level: Float!
+  summonerId: String!
+  points: Float!
+  lastPlayTime: Float!
+  chestGranted: Boolean!
+}
+
+"""Summoner"""
+type Summoner {
+  id: ID!
+  name: String!
+  accountId: String!
+  puuid: String!
+  profileIconId: String!
+  revisionDate: Float!
+  summonerLevel: Float!
+  championMastery: [ChampionMastery!]!
+  soloTier: String!
+  soloRank: String!
+  soloWins: Float!
+  soloLosses: Float!
+  soloLeaguePoints: Float!
+  flexTier: String!
+  flexRank: String!
+  flexWins: Float!
+  flexLosses: Float!
+  flexLeaguePoints: Float!
+}
+
+type Query {
+  championData(sorted: String!): [ChampionData!]!
+  getChamoionDataById(id: String!): ChampionData!
+  freeRotation: [ChampionData!]!
+  SummonerData(name: String!): Summoner!
+}

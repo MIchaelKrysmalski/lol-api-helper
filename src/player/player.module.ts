@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { PlayerService } from './player.service';
 
 
 @Module({
@@ -7,6 +8,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         TypeOrmModule.forFeature()
     ],
     controllers: [],
-    providers: [],
+    providers: [PlayerService],
 })
 export class PlayerModule { }
